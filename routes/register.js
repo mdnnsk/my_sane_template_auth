@@ -9,7 +9,7 @@ router.get('/', function (req,res){
   res.sendFile(path.resolve('public/views/register.html'));
 });
 
-router.post('/', function () {
+router.post('/', function (req, res) {
   console.log("hit register post");
   console.log("username = " , req.body.username);
   console.log("password = " , req.body.password);
