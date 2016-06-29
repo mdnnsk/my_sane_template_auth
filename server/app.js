@@ -15,7 +15,7 @@ app.use(session({
   secret: 'secret',
   key: 'user',
   resave: 'true',
-  saveUninitialize: false,
+  // saveUninitialize: 'false',
   cookie: {maxage: 60000, secure:false}
 }));
 
